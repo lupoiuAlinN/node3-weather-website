@@ -22,7 +22,8 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 console.log(data);
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.forecast.summary + ' ' +  data.forecast.precipitation + '% sanse de pricipitatii si ' + data.forecast.temperature + ' grade'
+                messageTwo.textContent = data.forecast.summary + ' ' +  data.forecast.precipitation + '% sanse de pricipitatii si ' + data.forecast.temperature + ' grade' + '' +
+                    ' Temperatura maxima va fi ' +  data.forecast.temperatureMax + ' iar cea minima ' + data.forecast.temperatureMin
             }
         })
     })
